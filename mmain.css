@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+.clearfix {
+   zoom: 1;
+ }
+ .clearfix:after {
+   clear: both;
+   content: ".";
+   display: block;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+ }
+#main{
+
+}
+#header{
+    background-color: #000;
+    height: 46px;
+    text-transform:uppercase ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+
+}
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+#nav{
+    display: inline-block;
+}
+
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav li:hover .subnav{
+    display: inline-block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    padding: 0px 0px;
+    l
+   
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block ;
+
+}
+#nav .subnav a{
+    color: black;
+    line-height: 40px;
+}
+#header .search-btn{
+    float: right;
+    cursor: pointer;
+    padding: 0 21px;
+
+}
+#header .search-btn:hover{
+    background-color: brown;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+ 
+}
+
+#slide .text-content{
+ 
+  position: absolute;
+   color: #fff;
+   bottom: 47px;
+   text-align: center;
+   left: 50%;
+   transform: translateX(-50%);
+  
+  
+}
+#slide .text-heading{
+   font-size: 24px;
+   font-weight: 500;
+   
+}
+#slide .text-desrcription{
+   font-size: 15px;
+   margin-top: 25px;
+}
+.contenr-section{
+   width: 800px;
+   padding: 64px 0;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+.contenr-heading{
+   font-size: 30px;
+   text-align: center;
+   font-weight: 500;
+   letter-spacing:4px ;
+}
+.section-sup{
+   font-size: 15px;
+   text-align: center;
+   margin-top: 15px;
+   font-style: italic;
+   opacity: 0.6;
+
+
+}
+.about-text
+{
+   margin-top: 25px;
+   font-size: 15px;
+   text-align: justify;
+   line-height: 1.4;
+   
+}
+#content .list-img{
+   margin-top: 48px;
+   overflow: hidden;
+
+}
+#content .members-list{
+   float: left;
+   width: 33.33333%;
+   text-align: center;
+   overflow: hidden;
+  
+}
+#content .list-name{
+   font-size: 15px;
+  
+
+}
+#content .member-img{
+   width: 154px;
+   margin-top: 15px;
+   border-radius: 4px;
+
+}
+.text-witch{
+   color: #fff !important;
+}
+.tour-section{
+   background-color:#000;
+
+}
+.tickets-list{
+   background-color: #fff;
+margin-top: 40px;
+
+}
+.tickets-list li{
+list-style-type: none;
+   
+   color: #757575;
+   font-size: 15px;
+   padding: 11px 16px;
+   border-bottom: 1px solid #ddd;
+
+}
+.tickets-list .solod{ 
+   background-color: #f44336;
+   color: #fff;
+   padding: 3px 4px;
+   margin-left: 16px
+
+}
+.tickets-list .quanty{
+   float: right;
+   width: 24px;
+   height: 24px;
+   background-color: #000;
+   color: #fff;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 24px;
+   margin-top: -3px;
+
+}
+.places-list{
+   margin-top: 32px;
+   margin-left: -8px;
+   margin-right: -8px;
+
+
+}
+.place-item{
+   float: left;
+   width: 33.333333%;
+   padding: 0 8px;
+}
+.place-body{
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+
+
+}
+.place-img{
+  width: 100%;
+  display: block;
+}
+.place-img:hover{
+  opacity: 0.6;
+
+}
+.place-haeding
+{
+   font-size:15px ;
+   font-weight: 600;
+
+}
+.place-time
+{margin-top: 15px;
+
+}
+.place-desc{
+   margin-top: 15px;
+   line-height: 1.4;
+
+}
+.place-by{
+   color: #fff;
+   background-color: #000;
+   text-decoration: none;
+   padding: 11px;
+   display: inline-block;
+   margin-top: 15px;
+   border: none;
+
+}
+.place-by:hover{
+   color: #000;
+   background-color: #ccc;
+   cursor: pointer;
+
+}
+.col{
+   float: left;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+.col-full{
+   width: 100%;
+
+}
+.col-hafl{
+   width: 50%;
+}
+
+
+
+.plull-right{
+   float: right !important;
+
+}
+
+.contac-ten{
+   margin-top: 48px
+;
+
+}
+.contact-info{
+   font-size: 18px;
+   line-height: 1.5;
+}
+.contact-info i{
+   width: 30px;
+}
+.half-zize{ 
+   padding:10px ;
+   font-size: 15px;
+   border: 1px solid #ccc;
+   width: 100%;
+  
+
+}
+
+
+.clearfix {
+   zoom: 1;
+ }
+ .clearfix:after {
+   clear: both;
+   content: ".";
+   display: block;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+ }
+ 
+ 
+ #footer {
+   background-color: #000;
+   color: #626262;
+   padding: 24px 0 16px;
+ }
+ #footer .footer-end {
+   background-color: #151515;
+   padding: 24px 0 16px;
+ }
+ #footer .inner,
+ #footer .copyright-section {
+   margin: 0 auto;
+   width: 1150px;
+ }
+ #footer .inner {
+   padding: 76px 0 90px;
+ }
+ #footer .inner .newsletter {
+   float: left;
+   width: 350px;
+ }
+ #footer .inner .newsletter p {
+   margin-bottom: 30px;
+ }
+ #footer input[type="email"] {
+   background-color: #151515;
+   border: 1px solid #151515;
+   color: #626262;
+   box-sizing: border-box;
+   height: 46px;
+   padding-left: 12px;
+   width: 284px;
+ }
+ #footer button {
+   background-color: #01bacf;
+   border: 1px solid #01bacf;
+   color: #fff;
+   cursor: pointer;
+   height: 44px;
+   min-width: 60px;
+   padding: 11px 10px;
+   text-align: center;
+   transition: 0.3s background-color;
+ }
+ #footer button:hover {
+   background-color: #11dbf2;
+ }
+ #footer .inner .right-section {
+   float: right;
+   width: 560px;
+ }
+ #footer .inner .link-list {
+   float: left;
+   width: 186px;
+   margin-right: 10px;
+ }
+ #footer .inner .link-list:last-child {
+   width: 156px;
+   margin-right: 0;
+ }
+ #footer .inner .link-list li {
+   margin-bottom: 10px;
+ }
+ #footer .inner .link-list a {
+   color: #626262;
+   text-decoration: none;
+   transition: 0.3s color;
+ }
+ #footer .inner .link-list a:hover {
+   color: #ccc;
+ }
+ #footer .copyright-section .logo {
+   float: left;
+   width: 190px;
+ }
+ #footer .copyright-section .copyright {
+   float: right;
+   padding-top: 15px;
+   text-align: right;
+   width: 550px;
+ }

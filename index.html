@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="mmain.css">
+    <script>
+        var i=0;
+        var images= [];
+        var time = 3000;
+    
+        images = ['img/anh1.jpg',
+             'img/anh2.jpg',
+           'img/ny.jpg',]
+        function changeImage(){
+            document.slide.src= images[i];
+            if(i <images.length - 1){
+                i++;
+            }else{
+                i = 0;
+            }
+            setTimeout("changeImage()" , time);
+        }
+        window.onload = changeImage;
+    
+    </script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+        <ul id="nav"><li></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Band">Band</a></li>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">More
+                <i class="ti-angle-down"></i>
+            </a>
+                <ul class="subnav">
+                    <li><a href="#contenr-heading">Merchaduse</a></li>
+                    <li><a href="">Extras</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-btn"
+         > <i class="search-icon ti-search"></i>
+        </div>
+
+    </div>
+    <div id="slide">
+        <img name="slide" width="100%" height="800">
+
+    </div>
+    <div id="content">
+        <div class="contenr-section">
+            <h2 class="contenr-heading">THE BAND</h2>
+            <p class="section-sup">We love music</p>
+            <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="members-list">
+            <div class="list-img">
+                <p class="list-name">Name</p>
+                <img src="img/bandmember.jpg" alt="" class="member-img">
+            </div>
+        </div>
+        <div class="members-list">
+            <div class="list-img">
+                <p class="list-name">Name</p>
+                <img src="img/bandmember.jpg" alt="" class="member-img">
+            </div>
+        </div>
+        <div class="members-list">
+            <div class="list-img">
+                <p class="list-name">Name</p>
+                <img src="img/bandmember.jpg" alt="" class="member-img">
+            </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        
+
+     <div class="tour-section">
+
+        <div class="contenr-section">
+             <h2 class="contenr-heading text-witch ">TOUR DATES</h2>
+             <p class="section-sup  text-witch">Remember to book your tickets!</p>
+           <ul class="tickets-list">
+               <li>Septembe <span class="solod"> Sold out</span></li>
+               <li>Octobe <span class="solod"> Sold out</span></li>
+               <li>November <span class="quanty"> 3</span></li>
+           </ul>
+           <div class="places-list">
+               <div class="place-item">
+                   <img src="img/newyork.jpg" alt="" class="place-img">
+                   <div class="place-body">
+                       <h3 class="place-haeding">New York</h3>
+                       <p class="place-time">Fri 27 Nov 2016</p>
+                       <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                       <a href="#" class="place-by"> By Tickets </a>
+                   </div>
+
+               </div>
+               <div class="place-item">
+                <img src="img/newyork.jpg" alt="" class="place-img">
+                <div class="place-body">
+                    <h3 class="place-haeding">Paris</h3>
+                    <p class="place-time">Sat 28 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="#" class="place-by">By Tickets  </a>
+                </div>
+
+            </div>
+            <div class="place-item">
+                <img src="img/newyork.jpg" alt="" class="place-img">
+                <div class="place-body">
+                    <h3 class="place-haeding">San Francisco</h3>
+                    <p class="place-time">Sun 29 Nov 2016</p>
+                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="#" class="place-by">By Tickets </a>
+                </div>
+
+               </div>
+               <div class="clear"></div>
+     </div>
+        </div>
+     
+    
+        
+            
+
+        </div>
+        <div class="contenr-section">
+            <div class="contenr-section">
+                <h2 class="contenr-heading">CONTACT</h2>
+                <p class="section-sup">Fan? Drop a note!</p>
+            </div>
+            <div class="row contac-ten">
+                <div class="col col-half contact-info">
+                    <p><i class="ti-location-pin"> Chicago, US</i></p>
+                    <p><i class="ti-mobile"> Phone: +00 151515</i></p>
+                    <p><i class="ti-email"> Email: mail@mail.com</i></p>
+                </div>
+            </div>
+            <div class="col col-half">
+                <form action="">
+                    <div class="row">
+                        <div class="col col-half">
+                            <input type="text" name="" placeholder="Name" value="" class="half-zize">
+                        </div>
+                   
+                        <div class="col col-half">
+                            <input type="text" name="" placeholder="Email" value="" class="half-zize">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col col-full">
+                            <input type="text" name="" placeholder="Messgas" value="" class="half-zize">
+                        </div>
+                    </div>
+                    <div ><button type="submit" class="place-by plull-right">Send </button></div>
+                </form>
+            </div>
+            <div class="clear"></div>
+           
+        </div>
+        <div class="map-section">
+            <img src="img/map.jpg" alt="map"  width="100%" height="800">
+            <div class="clear"></div>
+        </div>
+        
+    
+      
+    
+        <div id="footer">
+            <div class="inner clearfix">
+              <div class="newsletter">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form method="" action="">
+                  <p><input type="email" name="email" placeholder="Enter email here." value=""><button type="submit"><i class="search-icon ti-search"></i></button></p>
+                </form>
+              </div>
+        
+              <div class="right-section">
+                <div class="link-list">
+                  <nav>
+                    <ul>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">About me</a></li>
+                      <li><a href="">Our Services</a></li>
+                      <li><a href="">Our Team</a></li>
+                      <li><a href="">Contact us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+        
+                <div class="link-list">
+                  <ul>
+                    <li><a href="">Get In Touch</a></li>
+                    <li><a href="">FAQ&#39;s</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Elements</a></li>
+                    <li><a href="">Not Found</a></li>
+                  </ul>
+                </div>
+        
+                <div class="link-list">
+                  <ul>
+                    <li><a href="">Checkout</a></li>
+                    <li><a href="">Shopping Cart</a></li>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">Login</a> / <a href="">Register</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        
+            <div class="footer-end">
+              <div class="copyright-section clearfix">
+               
+                <p class="copyright">; nguyenthuy998lc@gmail.com.</p>
+              </div>
+            </div>
+        </div>
+
+
+  </div>
+
+    
+</body>
+</html>
